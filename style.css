@@ -1,0 +1,56 @@
+
+  /* Establecer la fuente Garamond para todo el texto del cuerpo */
+body {
+  font-family: Garamond, serif;
+}
+
+/* Establecer la fuente "Brush Script MT" para los elementos h1 */
+h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 70px; /* Tamaño de fuente de 36 píxeles */
+}
+
+
+
+#home {
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo personalizado para el enlace activo (seleccionado) */
+.nav-pills .nav-link.active {
+  background-color: #28a745; /* Color de fondo "success" de Bootstrap */
+  color: #fff; /* Texto en color blanco */
+}
+
+/* Estilo personalizado para los enlaces no seleccionados */
+.nav-pills .nav-link {
+  color: #28a745; /* Color de fuente verde cuando no está seleccionado */
+}
+
+/* Estilo personalizado para el enlace activo (seleccionado) */
+.nav-pills .nav-link.active {
+  background-color: #28a745; /* Color de fondo "success" de Bootstrap */
+  color: #fff; /* Texto en color blanco cuando está seleccionado */
+}
+
+
+/* Estilos para las imágenes de los productos en el modal */
+.img-producto {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el precio del producto en el modal */
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para el botón "Quitar" del producto en el modal */
+.btn-quitar-producto {
+  margin-top: 10px;
+}

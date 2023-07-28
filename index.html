@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzería Don Remolo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+  <div class="container">
+     <a class="navbar-brand text-white" href="#">Pizzería Don Remolo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#comidas">Comidas</a>
+        </li>
+      </ul>
+    </div>
+    <button id="botonCarrito" class="btn btn-light">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" style="background-image: url('imagenes/pizza1.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-center text-white">
+      <h1>Bienvenido a Pizzería Don Remolo</h1>
+      <p>Disfruta de las mejores pizzas y sabores auténticos.</p>
+      <p>¡Hacemos entregas a domicilio!</p>
+      <a href="#comidas" class="btn btn-success mb-4">Ver nuestro menú</a>
+    </div>
+  </section>
+
+  <!-- Nosotros Section -->
+<section id="nosotros">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Nosotros</h1>
+    <div class="row">
+      <!-- Columna del texto a la izquierda -->
+      <div class="col-md-6 mt-4">
+        <p>¡Bienvenidos a nuestra pizzería italiana, donde la tradición y el amor por la pizza se fusionan para ofrecerte una experiencia única y deliciosa!</p>
+        <p>En cada una de nuestras creaciones, traemos a tu mesa el sabor auténtico de Italia, elaborado con pasión y dedicación. Nuestra historia se remonta a generaciones atrás, donde la receta de la masa perfecta y los ingredientes de primera calidad han sido transmitidos de padres a hijos, preservando el verdadero arte de la pizza italiana.</p>
+        <p>Te invitamos a explorar nuestro menú y descubrir todas las delicias que tenemos preparadas para ti. Desde nuestras clásicas pizzas hasta las irresistibles empanadas y postres, hay algo para todos los amantes de la buena comida.</p>
+
+      </div>
+      <!-- Columna de la imagen a la derecha -->
+      <div class="col-md-6">
+        <img src="imagenes/pizza2.jpg" class="img-fluid" alt="Imagen de Pizza">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Comidas Section -->
+<section id="comidas">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Nuestras Deliciosas Comidas</h1>
+
+    <!-- Submenu for Categorías -->
+    <ul class="nav justify-content-center nav-pills text-center mb-4 ">
+      <li class="nav-item">
+        <a class="nav-link active " data-toggle="pill" href="#pizzas">Pizzas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#bebidas">Bebidas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#postres">Postres</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#empanadas">Empanadas</a>
+      </li>
+      <!-- Add more categories here if needed -->
+    </ul>
+
+    <!-- Content for Categorías -->
+    <div class="tab-content">
+      <!-- Category 1: Pizzas -->
+      <div id="pizzas" class="tab-pane fade show active">
+        <h3>Pizzas</h3>
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/jamonymorron.jpg" class="card-img-top" alt="Jamón y Morrones">
+              <div class="card-body">
+                <h5 class="card-title">Jamón y Morrones</h5>
+                <p class="card-text">Deliciosa pizza con con salsa, jamón y morrones.</p>
+                <p class="card-text">Precio: $4000</p>
+                <a href="#" class="btn btn-success" data-id="producto1">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/muzzarella.jpg" class="card-img-top" alt="Muzzarella">
+              <div class="card-body">
+                <h5 class="card-title">Muzzarella</h5>
+                <p class="card-text">Clásica pizza de muzzarella con salsa de tomate.</p>
+                <p class="card-text">Precio: $3000</p>
+                <a href="#" class="btn btn-success" data-id="producto2">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/napolitana.jpg" class="card-img-top" alt="Napolitana">
+              <div class="card-body">
+                <h5 class="card-title">Napolitana</h5>
+                <p class="card-text">Pizza napolitana con tomate, ajo, aceitunas y orégano.</p>
+                <p class="card-text">Precio: $4500</p>
+                <a href="#" class="btn btn-success" data-id="producto3">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Bebidas -->
+      <div id="bebidas" class="tab-pane fade">
+        <h3>Bebidas</h3>
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/agua.jpg" class="card-img-top" alt="Agua">
+              <div class="card-body">
+                <h5 class="card-title">Agua</h5>
+                <p class="card-text">Botella de agua mineral sin gas.</p>
+                <p class="card-text">Precio: $500</p>
+                <a href="#" class="btn btn-success" data-id="producto4">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/gaseosa.jpg" class="card-img-top" alt="Gaseosa">
+              <div class="card-body">
+                <h5 class="card-title">Gaseosa</h5>
+                <p class="card-text">Refrescante gaseosa de cola.</p>
+                <p class="card-text">Precio: $1000</p>
+                <a href="#" class="btn btn-success" data-id="producto5">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/cerveza.jpg" class="card-img-top" alt="Cerveza">
+              <div class="card-body">
+                <h5 class="card-title">Cerveza</h5>
+                <p class="card-text">Fría y espumante cerveza artesanal.</p>
+                <p class="card-text">Precio: $900</p>
+                <a href="#" class="btn btn-success" data-id="producto6">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: Postres -->
+      <div id="postres" class="tab-pane fade">
+        <h3>Postres</h3>
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/almendrado.jpg" class="card-img-top" alt="Almendrado">
+              <div class="card-body">
+                <h5 class="card-title">Almendrado</h5>
+                <p class="card-text">Tarta de almendras y dulce de leche.</p>
+                <p class="card-text">Precio: $2000</p>
+                <a href="#" class="btn btn-success" data-id="producto7">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/bombones.jpg" class="card-img-top" alt="Bombones">
+              <div class="card-body">
+                <h5 class="card-title">Bombones</h5>
+                <p class="card-text">Deliciosos y rellenos de chocolate.</p>
+                <p class="card-text">Precio: $2500</p>
+                <a href="#" class="btn btn-success" data-id="producto8">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img src="imagenes/helado.jpg" class="card-img-top" alt="Helado">
+              <div class="card-body">
+                <h5 class="card-title">Helado</h5>
+                <p class="card-text">Helado crema de diversos sabores.</p>
+                <p class="card-text">Precio: $700</p>
+                <a href="#" class="btn btn-success" data-id="producto9">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Category 4: Empanadas -->
+    <div id="empanadas" class="tab-pane fade">
+      <h3>Empanadas</h3>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="imagenes/empanada_atun.jpg" class="card-img-top" alt="empanada_atun">
+            <div class="card-body">
+              <h5 class="card-title">Empanada Atun</h5>
+              <p class="card-text">Deliciosas empanadas de atún fresco.</p>
+              <p class="card-text">Precio: $2000</p>
+              <a href="#" class="btn btn-success" data-id="producto10">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="imagenes/empanada_carne.jpg" class="card-img-top" alt="empanada_carne">
+            <div class="card-body">
+              <h5 class="card-title">Empanada de carne</h5>
+              <p class="card-text">Clásicas empanadas de carne.</p>
+              <p class="card-text">Precio: $2500</p>
+              <a href="#" class="btn btn-success" data-id="producto11">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="imagenes/empanada_jamonyqueso.jpg" class="card-img-top" alt="empanada_jamonyqueso">
+            <div class="card-body">
+              <h5 class="card-title">Empanada de jamón y queso</h5>
+              <p class="card-text">Empanadas de jamón y queso.</p>
+              <p class="card-text">Precio: $2500</p>
+              <a href="#" class="btn btn-success" data-id="producto12">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Add more categories here if needed -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal del carrito de compras -->
+<div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="carritoModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100" id="carritoModalLabel">Carrito de Compras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul id="carritoLista" class="list-group">
+          <!-- Los productos agregados al carrito se agregarán aquí -->
+          <button class="btn btn-danger btn-quitar-producto" data-id="id_producto">Quitar</button>
+
+        </ul>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success" id="btnConfirmarCompra">Confirmar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="bg-light text-center mt-5 py-3">
+    <p>Ramirez Noelia Dolores - Todos los derechos reservados &copy; 2023 Pizzería Don Remolo</p>
+  </footer>
+
+ <!-- Bootstrap JS and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+ <script>
+    
+  // JavaScript
+  
+  $(document).ready(function () {
+    var carrito = []; // Array para almacenar los productos agregados al carrito
+    var total = 0;
+    // Function para agregar un producto al carrito
+    function agregarAlCarrito(nombre, precio, imagenSrc, id) {
+      carrito.push({ nombre: nombre, precio: precio, imagenSrc: imagenSrc, id: id });
+      actualizarCarrito();
+    }
+  
+    function actualizarCarrito() {
+  var carritoLista = $('#carritoLista');
+  carritoLista.empty();
+  total = 0;
+
+  carrito.forEach(function (producto) {
+    carritoLista.append(
+      '<li class="list-group-item align-items-center">' +
+      '<div class="row d-flex justify-content-between">' +
+      '<div class="col-md-4">' +
+      '<img src="' + producto.imagenSrc + '" alt="' + producto.nombre + '" class="img-fluid carrito-imagen">' +
+      '</div>' +
+      '<div class="col-md-8">' +
+      '<strong>' + producto.nombre + '</strong>' +
+      '<p>Precio: $' + producto.precio.toFixed(2) + '</p>' +
+      '<button class="btn btn-danger btn-quitar-producto" data-id="' + producto.id + '">Quitar</button>' +
+      '</div>' +
+      '</div>' +
+      '</li>'
+    );
+    total += producto.precio;
+  });
+
+  carritoLista.append('<li class="list-group-item active bg-success text-white font-weight-bold text-center mt-4">Total: $<span id="totalCarrito">' + total.toFixed(2) + '</span></li>');
+  $('#totalCarrito').text(total.toFixed(2)); // Actualizamos el monto total en el botón del carrito
+}
+
+  
+    // Event handler para el botón "Comprar" en cada tarjeta de producto
+    $('.card .btn.btn-success').click(function (e) {
+      e.preventDefault();
+      var nombre = $(this).closest('.card-body').find('.card-title').text();
+      var precio = parseFloat($(this).closest('.card-body').find('.card-text').eq(1).text().replace('Precio: $', ''));
+      var imagenSrc = $(this).closest('.card').find('img').attr('src');
+      var id = $(this).data('id');
+      agregarAlCarrito(nombre, precio, imagenSrc, id);
+    });
+  
+    // Event handler para el botón de carrito
+    $('#botonCarrito').click(function () {
+      actualizarCarrito(); // Actualiza el contenido del carrito antes de mostrar el modal
+      $('#carritoModal').modal('show'); // Muestra la ventana modal del carrito de compras
+    });
+  
+    // Event handler para el botón "Confirmar Compra"
+    $('#btnConfirmarCompra').click(function () {
+      // Acá agregar la lógica para procesar la compra, enviarla a wpp.
+      enviarPedidoPorWhatsApp();
+      alert('¡Compra confirmada! Gracias por su compra.');
+      carrito = []; // Vacía el carrito después de confirmar la compra
+      actualizarCarrito(); // Actualiza la ventana modal del carrito para reflejar el carrito vacío
+      $('#carritoModal').modal('hide'); // Cierra la ventana modal después de confirmar la compra
+    });
+
+    // Event handler para el botón "Quitar" en cada elemento del carrito
+    $(document).on('click', '.btn-quitar-producto', function (e) {
+      e.preventDefault();
+      var productoId = $(this).data('id');
+      eliminarDelCarrito(productoId);
+      actualizarCarrito();
+    });
+
+    // Function para eliminar un producto del carrito
+    function eliminarDelCarrito(productoId) {
+      carrito = carrito.filter(function (producto) {
+        return producto.id !== productoId;
+      });
+    }
+
+    
+    function enviarPedidoPorWhatsApp() {
+        var mensaje = "Hola Pizzeria Don Remolo, quiero hacer un pedido de:\n";
+
+        carrito.forEach(function (producto) {
+          mensaje += producto.nombre + " - Precio: $" + producto.precio.toFixed(2) + "\n";
+        });
+
+        mensaje += "Total: $" + total.toFixed(2);
+
+        // Reemplaza "NUMERO_DE_TELEFONO" con el número de teléfono al que deseas enviar el mensaje
+        window.open("https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO&text=" + encodeURIComponent(mensaje), "_blank");
+      }
+
+
+
+  });
+  
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
